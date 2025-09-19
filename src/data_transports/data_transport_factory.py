@@ -17,6 +17,6 @@ class DataTransportFactory:
             return TunDataTransportFactory(self.base_config).create_transport()
         elif transport_type == 'socks':
             from src.data_transports.socks.socks_data_transport_factory import SocksDataTransportFactory
-            return SocksDataTransportFactory(self.base_config).create_transport()
+            return SocksDataTransportFactory(self.base_config).create_test_transport()
         
         raise ValueError(f"Unsupported data transport type: {transport_type}")
