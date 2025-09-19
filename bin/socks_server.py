@@ -1,10 +1,5 @@
-# В Termux на телефоне
-pkg install python
-pip install pysocks
-
-# Создать простой SOCKS-сервер
-python3 -c "
 import socket, threading, struct
+
 def handle_socks(client):
     try:
         client.recv(262)
