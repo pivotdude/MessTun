@@ -1,0 +1,5 @@
+config.yml
+*.session
+venv
+**/__pycache__
+.env
